@@ -88,7 +88,7 @@ Con el fin de analizar la distribución estadística de la señal ECG, se constr
 El histograma permite visualizar la frecuencia con la que aparecen determinados rangos de amplitud dentro de la señal, proporcionando una representación gráfica de su comportamiento estadístico.
 Esta herramienta es útil para evaluar la simetría, dispersión y forma de la distribución, lo cual se relaciona directamente con parámetros como la media, la desviación estándar, la asimetría (skewness) y la curtosis.
 
-![Histograma](Histograma A.png)
+![Histograma](HistogramaA.png)
 
 ---
 
@@ -100,6 +100,10 @@ Se contaminó la señal con:
 + Ruido Gaussiano
 + Ruido Impulso
 + Ruido tipo Artefacto
+
+***Señales con ruido***
+
+![Señales contaminadas con ruido]()
 
 Se calculó la Relación Señal-Ruido (SNR) usando:
 SNR = 10 log10(Pseñal / Pruido)
