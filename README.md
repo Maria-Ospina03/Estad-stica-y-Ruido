@@ -16,6 +16,7 @@ predefinidas de librerías especializadas.
 En esta primera etapa del laboratorio se descargó una señal ECG desde PhysioNet (Brno University of Technology ECG Database) y se realizó su importación, visualización y análisis estadístico.
 
 **Señal ECG importada**
+
 ![Señal ECG physionet](ECGdata.png)
 
 ---
@@ -71,6 +72,25 @@ skew_np = stats.skew(senal)
 kurt_np = stats.kurtosis(senal, fisher=False)  # para que coincida con el manual
 
 ```
+Y se obtuvieron los siquientes resultados
+
+Media: -0.19348138119299282
+
+Desv estándar: 0.2946382102175074
+
+CV: -1.5228246170292385
+
+Skewness: 1.3747776389974853
+
+Curtosis: 11.601684982096616
+
+Con el fin de analizar la distribución estadística de la señal ECG, se construyó un histograma de sus valores de amplitud.
+El histograma permite visualizar la frecuencia con la que aparecen determinados rangos de amplitud dentro de la señal, proporcionando una representación gráfica de su comportamiento estadístico.
+Esta herramienta es útil para evaluar la simetría, dispersión y forma de la distribución, lo cual se relaciona directamente con parámetros como la media, la desviación estándar, la asimetría (skewness) y la curtosis.
+
+![Histograma](Histograma A.png)
+
+---
 
 ### Parte B: Captura de la señal
 Se generó una señal ECG usando un generador fisiológico y fue adquirida mediante STM32
@@ -83,6 +103,14 @@ Se contaminó la señal con:
 
 Se calculó la Relación Señal-Ruido (SNR) usando:
 SNR = 10 log10(Pseñal / Pruido)
+
+Se obtuvo: 
+SNR Ruido Gaussiano: 16.98746766925424
+
+SNR Ruido Impulso: -5.40275753605938
+
+SNR Artefacto: 7.933635233700488
+
 Se observó que:
 + El ruido impulso afecta significativamente la curtosis.
 + El ruido gaussiano aumenta la desviación estándar.
