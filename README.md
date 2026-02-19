@@ -15,6 +15,10 @@ predefinidas de librerías especializadas.
 ### Parte A: Señal de Physionet
 En esta primera etapa del laboratorio se descargó una señal ECG desde PhysioNet (Brno University of Technology ECG Database) y se realizó su importación, visualización y análisis estadístico.
 
+**Señal ECG importada**
+![Señal ECG physionet](ECGdata.png)
+
+---
 Se calcularon los siguientes parámetros:
 + Media
 + Desviación estándar
@@ -90,3 +94,13 @@ Los parámetros estadísticos permiten describir globalmente una señal biomédi
 Sin embargo, no son suficientes por sí solos para diagnosticar patologías, ya que no consideran la morfología específica de las ondas.
 
 La SNR es una herramienta útil para evaluar la calidad de señal, pero depende del tipo de ruido presente.
+
+## Referencias
+
+[1] L. Maršánová, A. Nemcova, R. Smisek, L. Smital, & M. Vitek (2021).  
+Brno University of Technology ECG Signal Database with Annotations of P Wave (BUT PDB).  
+PhysioNet. https://doi.org/10.13026/hvvj-5b53
+
+[2] A. L. Goldberger et al. (2000).  
+PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals.  
+Circulation, 101(23), e215–e220.
