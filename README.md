@@ -96,6 +96,7 @@ Esta herramienta es útil para evaluar la simetría, dispersión y forma de la d
 
 ### Parte B: Captura de la señal
 Se generó una señal ECG usando un generador fisiológico y fue adquirida mediante STM32
+<img width="965" height="502" alt="image" src="https://github.com/user-attachments/assets/57dab01b-6b05-41cd-870a-e860490ea6c2" />
 
 ### Parte C: 
 Se contaminó la señal con:
