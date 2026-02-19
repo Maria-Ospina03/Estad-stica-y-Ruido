@@ -12,7 +12,15 @@ histogramas, utilizando herramientas de programación en Python. Estos cálculos
 predefinidas de librerías especializadas.
 
 ### Desarrollo de la páctica 
-### Parte A
-En esta primera etapa del laboratorio se descargó una señal fisiológica desde Physionet y se realizó su importación, visualización y análisis estadístico.
+### Parte A: Señal de Physionet
+En esta primera etapa del laboratorio se descargó una señal ECG desde PhysioNet (Brno University of Technology ECG Database) y se realizó su importación, visualización y análisis estadístico.
 
-Calculando parámetros 
+Se calcularon los siguientes parámetros:
++ Media
++ Desviación estándar
++ Coeficiente de variación
++ Skewness
++ Curtosis
+
+Manualmente (programando las fórmulas)
+
