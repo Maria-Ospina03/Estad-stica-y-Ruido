@@ -23,4 +23,70 @@ Se calcularon los siguientes parámetros:
 + Curtosis
 
 Manualmente (programando las fórmulas)
+```python
+# Media
+media_manual = sum(senal) / N
 
+# Desviación estándar
+suma = 0
+for x in senal:
+    suma += (x - media_manual) ** 2
+desv_manual = (suma / N) ** 0.5
+
+# Coeficiente de variación
+if media_manual != 0:
+    cv_manual = desv_manual / media_manual
+else:
+    cv_manual = 0
+
+# Skewness
+suma_skew = 0
+for x in senal:
+    suma_skew += ((x - media_manual) / desv_manual) ** 3
+skew_manual = suma_skew / N
+
+# Curtosis
+suma_kurt = 0
+for x in senal:
+    suma_kurt += ((x - media_manual) / desv_manual) ** 4
+kurt_manual = suma_kurt / N
+
+}
+```
+Usando funciones de NumPy y SciPy
+```python
+# Media
+media_np = np.mean(senal)
+# Desviación estándar
+desv_np = np.std(senal)
+#Coeficiente de variación
+cv_np = desv_np / media_np
+# Skewness
+skew_np = stats.skew(senal)
+# Curtosis
+kurt_np = stats.kurtosis(senal, fisher=False)  # para que coincida con el manual
+
+```
+
+### Parte B: Captura de la señal
+Se generó una señal ECG usando un generador fisiológico y fue adquirida mediante STM32
+
+### Parte C: 
+Se contaminó la señal con:
++ Ruido Gaussiano
++ Ruido Impulso
++ Ruido tipo Artefacto
+
+Se calculó la Relación Señal-Ruido (SNR) usando:
+SNR = 10 log10(Pseñal / Pruido)
+Se observó que:
++ El ruido impulso afecta significativamente la curtosis.
++ El ruido gaussiano aumenta la desviación estándar.
++ El artefacto modifica la media y la línea base.
++ A menor SNR, menor calidad de señal.
+
+### Conclusiones
+Los parámetros estadísticos permiten describir globalmente una señal biomédica.
+Sin embargo, no son suficientes por sí solos para diagnosticar patologías, ya que no consideran la morfología específica de las ondas.
+
+La SNR es una herramienta útil para evaluar la calidad de señal, pero depende del tipo de ruido presente.
