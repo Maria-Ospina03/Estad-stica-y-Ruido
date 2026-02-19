@@ -65,7 +65,7 @@ media_np = np.mean(senal)
 # Desviación estándar
 desv_np = np.std(senal)
 #Coeficiente de variación
-cv_np = desv_np / media_np
+cv_np = desv_np / media_np #el coeficiente siempre es positivo
 # Skewness
 skew_np = stats.skew(senal)
 # Curtosis
@@ -78,7 +78,7 @@ Media: -0.19348138119299282
 
 Desv estándar: 0.2946382102175074
 
-CV: -1.5228246170292385
+CV: 1.5228246170292385
 
 Skewness: 1.3747776389974853
 
