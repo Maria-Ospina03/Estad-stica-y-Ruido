@@ -19,7 +19,7 @@ En esta primera etapa del laboratorio se descargó una señal ECG desde PhysioNe
 
 ![Señal ECG physionet](ECGdata.png)
 
----
+
 Se calcularon los siguientes parámetros:
 + Media
 + Desviación estándar
@@ -84,6 +84,8 @@ Skewness: 1.3747776389974853
 
 Curtosis: 11.601684982096616
 
+***Histograma***
+
 Con el fin de analizar la distribución estadística de la señal ECG, se construyó un histograma de sus valores de amplitud.
 El histograma permite visualizar la frecuencia con la que aparecen determinados rangos de amplitud dentro de la señal, proporcionando una representación gráfica de su comportamiento estadístico.
 Esta herramienta es útil para evaluar la simetría, dispersión y forma de la distribución, lo cual se relaciona directamente con parámetros como la media, la desviación estándar, la asimetría (skewness) y la curtosis.
@@ -98,34 +100,57 @@ Se generó una señal ECG usando un generador fisiológico y fue adquirida media
 ### Parte C: 
 Se contaminó la señal con:
 + Ruido Gaussiano
+
+```python
+ruido_gauss = np.random.normal(0, 0.05, len(senal))
+senal_gauss = senal + ruido_gauss
+
+snr_gauss = calcular_snr(senal, senal_gauss)
+print("SNR Ruido Gaussiano:", snr_gauss)
+```
+ 
 + Ruido Impulso
+```python
+senal_impulso = senal.copy()
+
+cantidad_impulsos = int(0.02 * len(senal))  # 2% de muestras
+indices = np.random.randint(0, len(senal), cantidad_impulsos)
+
+senal_impulso[indices] = np.max(senal) * 3
+
+snr_impulso = calcular_snr(senal, senal_impulso)
+print("SNR Ruido Impulso:", snr_impulso)
+```
 + Ruido tipo Artefacto
 
+```python
+t = np.linspace(0, 10, len(senal))
+artefacto = 0.2 * np.sin(2*np.pi*0.5*t)
+
+senal_artefacto = senal + artefacto
+
+snr_artefacto = calcular_snr(senal, senal_artefacto)
+print("SNR Artefacto:", snr_artefacto)
+```
 ***Señales con ruido***
 
-![Señales contaminadas con ruido]()
+![Señales contaminadas con ruido](Señalconruido.png)
 
 Se calculó la Relación Señal-Ruido (SNR) usando:
+
 SNR = 10 log10(Pseñal / Pruido)
 
 Se obtuvo: 
-SNR Ruido Gaussiano: 16.98746766925424
+SNR Ruido Gaussiano: 16.99 dB
 
-SNR Ruido Impulso: -5.40275753605938
+SNR Ruido Impulso: -5.40 dB
 
-SNR Artefacto: 7.933635233700488
+SNR Artefacto: 7.93 dB
 
-Se observó que:
-+ El ruido impulso afecta significativamente la curtosis.
-+ El ruido gaussiano aumenta la desviación estándar.
-+ El artefacto modifica la media y la línea base.
-+ A menor SNR, menor calidad de señal.
-
-### Conclusiones
-Los parámetros estadísticos permiten describir globalmente una señal biomédica.
-Sin embargo, no son suficientes por sí solos para diagnosticar patologías, ya que no consideran la morfología específica de las ondas.
-
-La SNR es una herramienta útil para evaluar la calidad de señal, pero depende del tipo de ruido presente.
+### Análisis
++ El ruido gaussiano produjo una SNR de 16.99 dB, indicando una calidad de señal moderadamente afectada. Aunque la señal aún conserva su estructura principal, la dispersión aumenta debido a la naturaleza aleatoria del ruido.
++ El ruido impulso generó una SNR negativa (-5.40 dB), lo que indica que la potencia del ruido supera la de la señal original. Este tipo de ruido introduce valores extremos que distorsionan significativamente la señal biomédica, afectando su análisis estadístico y posible interpretación clínica.
++ El ruido tipo artefacto produjo una SNR de 7.93 dB, indicando una degradación considerable de la señal. Este tipo de ruido afecta principalmente la línea base, generando desplazamientos que pueden alterar parámetros estadísticos como la media.
 
 ## Referencias
 
