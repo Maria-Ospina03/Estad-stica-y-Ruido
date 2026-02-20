@@ -128,7 +128,7 @@ Asimetria (skewness): 1.6704965004522951
 
 Curtosis: 6.3865478790626895
 
---Histograma de la señal--
+***Histograma de la señal***
 
 <img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/efa80824-f349-48eb-96c8-7b80489dd78a" />
 
