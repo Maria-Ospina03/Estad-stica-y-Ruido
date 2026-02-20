@@ -102,12 +102,22 @@ Muestra de los primero 5 segundos de la señal
 <img width="960" height="500" alt="image" src="https://github.com/user-attachments/assets/57dab01b-6b05-41cd-870a-e860490ea6c2" />
 
 Los estadisticos de esos 5 seg
+
 ----- ANALISIS ECG (5 s) -----
+
 Media: 0.0014590164967198459
+
 Desviacion estandar: 0.22663213223260037
+
 Coeficiente de variacion: 155.33212457988904
+
 Asimetria (skewness): 1.6704965004522951
+
 Curtosis: 6.3865478790626895
+
+--Histograma de la señal--
+<img width="745" height="567" alt="image" src="https://github.com/user-attachments/assets/efa80824-f349-48eb-96c8-7b80489dd78a" />
+
 
 ### Parte C: 
 Se contaminó la señal con:
