@@ -150,7 +150,7 @@ def ruido_impulso(signal, prob=0.01, amp=2):
 ```
 + Ruido tipo Artefacto
 
-<img width="617" height="182" alt="image" src="https://github.com/user-attachments/assets/634bbb92-a3da-4ba4-a837-c94d583183aa" />
+<img width="617" height="282" alt="image" src="https://github.com/user-attachments/assets/634bbb92-a3da-4ba4-a837-c94d583183aa" />
 
 
 ```python
