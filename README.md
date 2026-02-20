@@ -14,7 +14,7 @@ predefinidas de librerías especializadas.
 ### Desarrollo de la páctica 
 ### Parte A
 
-En esta primera etapa del laboratorio se descargó una señal ECG desde PhysioNet (Brno University of Technology ECG Database) y se realizó su importación, visualización y análisis estadístico.
+En esta primera etapa del laboratorio se descargó una señal ECG desde PhysioNet (Brno University of Technology ECG Database) y se realizó su importación, visualización y análisis estadístico[1][2].
 
 #### Diagrama de flujo del código "PrimerLaboratorio.py"
 
@@ -129,6 +129,11 @@ Curtosis: 6.3865478790626895
 
 
 ### Parte C: 
+
+#### Relación señal-ruido (SNR)
+
+La relación señal-ruido (SNR, Signal to Noise Ratio) es un parámetro que cuantifica la calidad de una señal al comparar la potencia de la señal útil con la potencia del ruido que la afecta. Se define como el cociente entre la potencia de la señal y la potencia del ruido, y generalmente se expresa en decibelios (dB) mediante una escala logarítmica. Un valor alto de SNR indica que la señal predomina sobre el ruido, lo que implica mayor claridad y fidelidad en la información transmitida o registrada; por el contrario, un valor bajo de SNR significa que el ruido tiene una influencia significativa y puede distorsionar o dificultar la interpretación de la señal. Este parámetro es fundamental en áreas como la electrónica, las telecomunicaciones y el procesamiento de señales biomédicas, por ejemplo en el análisis de electrocardiogramas (ECG), donde una adecuada relación señal-ruido permite identificar con precisión las características relevantes de la señal fisiológica [3][4].
+
 Se contaminó la señal con:
 + Ruido Gaussiano
 
@@ -219,3 +224,7 @@ PhysioNet. https://doi.org/10.13026/hvvj-5b53
 [2] A. L. Goldberger et al. (2000).  
 PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals.  
 Circulation, 101(23), e215–e220.
+
+[3] What is Signal to Noise Ratio and How to calculate it? (2024, July 17). Advanced PCB Design Blog | Cadence. https://resources.pcb.cadence.com/blog/2020-what-is-signal-to-noise-ratio-and-how-to-calculate-it
+
+[4] Qué es Señal-Ruido. Diccionario Médico. Clínica U. Navarra. (n.d.). https://www.cun.es. https://www.cun.es/diccionario-medico/terminos/senal-ruido
