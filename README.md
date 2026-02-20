@@ -134,7 +134,9 @@ Curtosis: 6.3865478790626895
 
 La relación señal-ruido (SNR, Signal to Noise Ratio) es un parámetro que cuantifica la calidad de una señal al comparar la potencia de la señal útil con la potencia del ruido que la afecta. Se define como el cociente entre la potencia de la señal y la potencia del ruido, y generalmente se expresa en decibelios (dB) mediante una escala logarítmica. Un valor alto de SNR indica que la señal predomina sobre el ruido, lo que implica mayor claridad y fidelidad en la información transmitida o registrada; por el contrario, un valor bajo de SNR significa que el ruido tiene una influencia significativa y puede distorsionar o dificultar la interpretación de la señal. Este parámetro es fundamental en áreas como la electrónica, las telecomunicaciones y el procesamiento de señales biomédicas, por ejemplo en el análisis de electrocardiogramas (ECG), donde una adecuada relación señal-ruido permite identificar con precisión las características relevantes de la señal fisiológica [3][4].
 
-Se contaminó la señal con:
+
+En la parte C se contaminó la señal con:
+
 + Ruido Gaussiano
 
 <img width="637" height="290" alt="image" src="https://github.com/user-attachments/assets/0b691369-d239-446f-aebf-53845ad94a42" />
