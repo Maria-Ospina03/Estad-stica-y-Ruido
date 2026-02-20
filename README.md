@@ -14,12 +14,12 @@ predefinidas de librerías especializadas.
 ### Desarrollo de la páctica 
 ### Parte A
 
+En esta primera etapa del laboratorio se descargó una señal ECG desde PhysioNet (Brno University of Technology ECG Database) y se realizó su importación, visualización y análisis estadístico.
+
 #### Diagrama de flujo del código "PrimerLaboratorio.py"
 
 ![Diagrama de flujo parte A](DiagramaFlujoA.png)
 
-
-En esta primera etapa del laboratorio se descargó una señal ECG desde PhysioNet (Brno University of Technology ECG Database) y se realizó su importación, visualización y análisis estadístico.
 
 **Señal ECG importada**
 
