@@ -61,7 +61,7 @@ for x in senal:
     suma_kurt += ((x - media_manual) / desv_manual) ** 4
 kurt_manual = suma_kurt / N
 
-}
+
 ```
 Usando funciones de NumPy y SciPy
 ```python
