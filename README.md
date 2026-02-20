@@ -18,7 +18,8 @@ En esta primera etapa del laboratorio se descargó una señal ECG desde PhysioNe
 
 #### Diagrama de flujo del código "PrimerLaboratorio.py"
 
-![Diagrama de flujo parte A](DiagramaFlujoA.png)
+![Diagrama de flujo parte A](DiagramaFlujoA.png)<img width="460" height="722" alt="image" src="https://github.com/user-attachments/assets/9ea4cbeb-c4ba-4e2e-87bd-706215436c0e" />
+
 
 
 **Señal ECG importada**
