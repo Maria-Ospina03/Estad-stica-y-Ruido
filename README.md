@@ -108,6 +108,10 @@ Esta herramienta es útil para evaluar la simetría, dispersión y forma de la d
 
 <img width="460" height="722" alt="image" src="https://github.com/user-attachments/assets/05caed31-4431-4d0b-b0df-ac93a68ff83a" />
 
+
+<img width="422" height="662" alt="image" src="https://github.com/user-attachments/assets/60cb0db8-9a27-45d2-9573-b587cc7f6575" />
+
+
 Se generó una señal ECG usando un generador fisiológico y fue adquirida mediante STM32
 
 
