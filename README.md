@@ -221,7 +221,7 @@ SNR Artefacto:: 8.532543794185596 dB
 + El ruido tipo artefacto produjo una SNR de 7.93 dB, indicando una degradación considerable de la señal. Este tipo de ruido afecta principalmente la línea base, generando desplazamientos que pueden alterar parámetros estadísticos como la media.
 + En cuanto a la variabilidad, la desviación estándar es mayor en la Parte A (0.295 frente a 0.227), lo que indica que la señal importada presenta una mayor dispersión absoluta. Esto puede deberse a diferencias en ganancia, escalado, ruido instrumental o condiciones experimentales distintas.
 + Respecto a la forma de la distribución, ambas señales presentan asimetría positiva (skewness mayor que cero), lo que indica que existen más eventos extremos en el lado positivo que en el negativo. La Parte B muestra una asimetría ligeramente mayor (1.67 frente a 1.37), lo que sugiere que los picos positivos son relativamente más pronunciados o frecuentes en esa señal.
-+ 
+  
 
 ## Referencias
 
