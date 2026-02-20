@@ -1,0 +1,11 @@
+# archivos de señales biomédicas
+*.dat
+*.hea
+*.apn
+
+# datos pesados
+*.csv
+*.txt
+
+# temporales
+__pycache__/
