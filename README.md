@@ -13,10 +13,6 @@ predefinidas de librerías especializadas.
 
 ### Desarrollo de la páctica 
 ### Parte A: Señal de Physionet
-#### Diagrama de flujo 
-
-![Diagrama de flujo parte A](DiagramaFlujoA.png)
-
 
 En esta primera etapa del laboratorio se descargó una señal ECG desde PhysioNet (Brno University of Technology ECG Database) y se realizó su importación, visualización y análisis estadístico.
 
@@ -96,6 +92,11 @@ El histograma permite visualizar la frecuencia con la que aparecen determinados 
 Esta herramienta es útil para evaluar la simetría, dispersión y forma de la distribución, lo cual se relaciona directamente con parámetros como la media, la desviación estándar, la asimetría (skewness) y la curtosis.
 
 ![Histograma](HISTOGRAMA.png)
+
+#### Diagrama de flujo del código "PrimerLaboratorio"
+
+![Diagrama de flujo parte A](DiagramaFlujoA.png)
+
 
 ---
 
