@@ -99,7 +99,7 @@ Se generó una señal ECG usando un generador fisiológico y fue adquirida media
 
 
 Muestra de los primero 5 segundos de la señal
-<img width="960" height="500" alt="image" src="https://github.com/user-attachments/assets/57dab01b-6b05-41cd-870a-e860490ea6c2" />
+<img width="860" height="400" alt="image" src="https://github.com/user-attachments/assets/57dab01b-6b05-41cd-870a-e860490ea6c2" />
 
 Los estadisticos de esos 5 seg
 
@@ -117,7 +117,7 @@ Curtosis: 6.3865478790626895
 
 --Histograma de la señal--
 
-<img width="645" height="467" alt="image" src="https://github.com/user-attachments/assets/efa80824-f349-48eb-96c8-7b80489dd78a" />
+<img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/efa80824-f349-48eb-96c8-7b80489dd78a" />
 
 
 ### Parte C: 
