@@ -165,20 +165,33 @@ def ruido_artefacto(signal, fs):
 
     return signal + baseline + emg
 ```
-***Señales con ruido***
-
-![Señales contaminadas con ruido](Señalconruido.png)
 
 Se calculó la Relación Señal-Ruido (SNR) usando:
 
 SNR = 10 log10(Pseñal / Pruido)
 
+```python
+def calcular_snr(senal_limpia, senal_ruidosa):
+
+    senal_limpia = np.array(senal_limpia)
+    senal_ruidosa = np.array(senal_ruidosa)
+
+    ruido = senal_ruidosa - senal_limpia
+
+    potencia_senal = np.sum(senal_limpia**2)
+    potencia_ruido = np.sum(ruido**2)
+
+    snr = 10 * np.log10(potencia_senal / potencia_ruido)
+
+    return snr
+```
+
 Se obtuvo: 
-SNR Ruido Gaussiano: 16.99 dB
+SNR Ruido Gaussiano:: 16.851709121441857 dB
 
-SNR Ruido Impulso: -5.40 dB
+SNR Ruido Impulso: dB
 
-SNR Artefacto: 7.93 dB
+SNR Artefacto:  dB
 
 ### Análisis
 + El ruido gaussiano produjo una SNR de 16.99 dB, indicando una calidad de señal moderadamente afectada. Aunque la señal aún conserva su estructura principal, la dispersión aumenta debido a la naturaleza aleatoria del ruido.
