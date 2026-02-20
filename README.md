@@ -124,6 +124,8 @@ Curtosis: 6.3865478790626895
 Se contaminó la señal con:
 + Ruido Gaussiano
 
+<img width="637" height="190" alt="image" src="https://github.com/user-attachments/assets/0b691369-d239-446f-aebf-53845ad94a42" />
+
 ```python
 ruido_gauss = np.random.normal(0, 0.05, len(senal))
 senal_gauss = senal + ruido_gauss
@@ -133,6 +135,10 @@ print("SNR Ruido Gaussiano:", snr_gauss)
 ```
  
 + Ruido Impulso
+
+<img width="645" height="192" alt="image" src="https://github.com/user-attachments/assets/26429956-7544-4b76-823b-edb9adbf514e" />
+
+
 ```python
 senal_impulso = senal.copy()
 
@@ -145,6 +151,9 @@ snr_impulso = calcular_snr(senal, senal_impulso)
 print("SNR Ruido Impulso:", snr_impulso)
 ```
 + Ruido tipo Artefacto
+
+<img width="617" height="182" alt="image" src="https://github.com/user-attachments/assets/634bbb92-a3da-4ba4-a837-c94d583183aa" />
+
 
 ```python
 t = np.linspace(0, 10, len(senal))
