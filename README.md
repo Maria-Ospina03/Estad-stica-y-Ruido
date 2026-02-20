@@ -187,6 +187,7 @@ def calcular_snr(senal_limpia, senal_ruidosa):
 ```
 
 Se obtuvo: 
+
 SNR Ruido Gaussiano:: 16.851709121441857 dB
 
 SNR Ruido Impulso:: 5.560231707752167 dB
@@ -194,8 +195,8 @@ SNR Ruido Impulso:: 5.560231707752167 dB
 SNR Artefacto:: 8.532543794185596 dB
 
 ### Análisis
-+ El ruido gaussiano produjo una SNR de 16.99 dB, indicando una calidad de señal moderadamente afectada. Aunque la señal aún conserva su estructura principal, la dispersión aumenta debido a la naturaleza aleatoria del ruido.
-+ El ruido impulso generó una SNR negativa (-5.40 dB), lo que indica que la potencia del ruido supera la de la señal original. Este tipo de ruido introduce valores extremos que distorsionan significativamente la señal biomédica, afectando su análisis estadístico y posible interpretación clínica.
++ El ruido gaussiano produjo una SNR de 16.85 dB, indicando una calidad de señal moderadamente afectada. Aunque la señal aún conserva su estructura principal, la dispersión aumenta debido a la naturaleza aleatoria del ruido.
++ El ruido impulso generó una SNR de 5.56 dB, lo que indica que la potencia del ruido aun no supera la de la señal original pero de igual manera ya no se podria usar esta señal como base para estudio de fenomenos fisiologicos pues afectas puntos importantes como el conteo de complejos QRS que es una de las razones principales por las que se usan este tipo de señales.
 + El ruido tipo artefacto produjo una SNR de 7.93 dB, indicando una degradación considerable de la señal. Este tipo de ruido afecta principalmente la línea base, generando desplazamientos que pueden alterar parámetros estadísticos como la media.
 
 ## Referencias
