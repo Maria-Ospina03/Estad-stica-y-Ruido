@@ -124,7 +124,7 @@ Curtosis: 6.3865478790626895
 Se contaminó la señal con:
 + Ruido Gaussiano
 
-<img width="637" height="190" alt="image" src="https://github.com/user-attachments/assets/0b691369-d239-446f-aebf-53845ad94a42" />
+<img width="637" height="290" alt="image" src="https://github.com/user-attachments/assets/0b691369-d239-446f-aebf-53845ad94a42" />
 
 ```python
 def ruido_gaussiano(signal, sigma=0.05):
@@ -134,7 +134,7 @@ def ruido_gaussiano(signal, sigma=0.05):
  
 + Ruido Impulso
 
-<img width="645" height="192" alt="image" src="https://github.com/user-attachments/assets/26429956-7544-4b76-823b-edb9adbf514e" />
+<img width="645" height="292" alt="image" src="https://github.com/user-attachments/assets/26429956-7544-4b76-823b-edb9adbf514e" />
 
 
 ```python
@@ -189,9 +189,9 @@ def calcular_snr(senal_limpia, senal_ruidosa):
 Se obtuvo: 
 SNR Ruido Gaussiano:: 16.851709121441857 dB
 
-SNR Ruido Impulso: dB
+SNR Ruido Impulso:: 5.560231707752167 dB
 
-SNR Artefacto:  dB
+SNR Artefacto:: 8.532543794185596 dB
 
 ### Análisis
 + El ruido gaussiano produjo una SNR de 16.99 dB, indicando una calidad de señal moderadamente afectada. Aunque la señal aún conserva su estructura principal, la dispersión aumenta debido a la naturaleza aleatoria del ruido.
