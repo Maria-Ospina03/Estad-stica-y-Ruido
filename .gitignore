@@ -5,7 +5,6 @@
 
 # datos pesados
 *.csv
-*.txt
 
 # temporales
 __pycache__/
