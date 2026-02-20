@@ -127,11 +127,9 @@ Se contaminó la señal con:
 <img width="637" height="190" alt="image" src="https://github.com/user-attachments/assets/0b691369-d239-446f-aebf-53845ad94a42" />
 
 ```python
-ruido_gauss = np.random.normal(0, 0.05, len(senal))
-senal_gauss = senal + ruido_gauss
-
-snr_gauss = calcular_snr(senal, senal_gauss)
-print("SNR Ruido Gaussiano:", snr_gauss)
+def ruido_gaussiano(signal, sigma=0.05):
+    ruido = np.random.normal(0, sigma, len(signal))
+    return signal + ruido# posteriormente se llamo la funcion para aplicar el ruido lo mismo para los demas tipos de ruido
 ```
  
 + Ruido Impulso
@@ -140,15 +138,15 @@ print("SNR Ruido Gaussiano:", snr_gauss)
 
 
 ```python
-senal_impulso = senal.copy()
+def ruido_impulso(signal, prob=0.01, amp=2):
+    signal_ruido = signal.copy()
+    n = len(signal)
 
-cantidad_impulsos = int(0.02 * len(senal))  # 2% de muestras
-indices = np.random.randint(0, len(senal), cantidad_impulsos)
+    for i in range(n):
+        if np.random.rand() < prob:
+            signal_ruido[i] += amp * (2*np.random.rand()-1)
 
-senal_impulso[indices] = np.max(senal) * 3
-
-snr_impulso = calcular_snr(senal, senal_impulso)
-print("SNR Ruido Impulso:", snr_impulso)
+    return signal_ruido
 ```
 + Ruido tipo Artefacto
 
@@ -156,13 +154,16 @@ print("SNR Ruido Impulso:", snr_impulso)
 
 
 ```python
-t = np.linspace(0, 10, len(senal))
-artefacto = 0.2 * np.sin(2*np.pi*0.5*t)
+def ruido_artefacto(signal, fs):
+    t = np.arange(len(signal))/fs
+    
+    # movimiento base respiratorio
+    baseline = 0.3*np.sin(2*np.pi*0.3*t)
+    
+    # ruido muscular EMG
+    emg = 0.15*np.sin(2*np.pi*35*t) * np.random.randn(len(signal))
 
-senal_artefacto = senal + artefacto
-
-snr_artefacto = calcular_snr(senal, senal_artefacto)
-print("SNR Artefacto:", snr_artefacto)
+    return signal + baseline + emg
 ```
 ***Señales con ruido***
 
