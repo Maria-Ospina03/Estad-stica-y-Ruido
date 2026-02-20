@@ -33,7 +33,7 @@ Se calcularon los siguientes parámetros:
 + Skewness
 + Curtosis
 
-Manualmente (programando las fórmulas)
+1. Manualmente (programando las fórmulas)
 ```python
 # Media
 media_manual = sum(senal) / N
@@ -64,7 +64,7 @@ kurt_manual = suma_kurt / N
 
 
 ```
-Usando funciones de NumPy y SciPy
+2. Usando funciones de NumPy y SciPy
 ```python
 # Media
 media_np = np.mean(senal)
